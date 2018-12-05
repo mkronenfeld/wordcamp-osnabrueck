@@ -20,7 +20,7 @@ npm run watch
 
 ## Deployment
 
-Copy and paste the content of your `style.css` file into the website's Customizer.
+Copy and paste the URL `https://api.github.com/repos/mkronenfeld/wordcamp-osnabrueck/contents/style.css` into the website's Remote-CSS input field. Then select the "append styles" radio button and click the update button.
 
 ## Built With
 
