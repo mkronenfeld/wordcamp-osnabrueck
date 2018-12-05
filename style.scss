@@ -1,11 +1,30 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Typography
+# Layout
+# Navigation
 # Content
+## Header
+## Posts and Pages
 # Media
 --------------------------------------------------------------*/
 
 @import 'sass/variables';
+
+/* Typography */
+
+@import 'sass/typography/typography';
+
+/* Layout */
+
+@import 'sass/layout/layout';
+
+/* Navigation */
+
+.navigation-top {
+  display: none !important;
+}
 
 /* Content */
 

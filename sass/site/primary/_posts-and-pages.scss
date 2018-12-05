@@ -1,0 +1,33 @@
+.entry-header {
+  display: none !important;
+}
+
+.entry-content {
+  h3 + h2 {
+  	font-weight: bold;
+  	line-height: 1;
+  	margin-bottom: 2rem;
+    margin-top: 1rem;
+
+  	&::after {
+  		background-color: $color__text-main;
+  		content: ' ';
+  		display: block;
+  		height: 0.5rem;
+  		margin-top: 2rem;
+  		width: 4rem;
+  	}
+  }
+
+  figure,
+  p {
+  	margin: 2rem 0 0;
+  }
+
+  li,
+  p,
+  td {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+}

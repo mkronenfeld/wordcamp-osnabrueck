@@ -1,33 +1,236 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Typography
+# Layout
+# Navigation
 # Content
+## Header
+## Posts and Pages
 # Media
 --------------------------------------------------------------*/
+/* Typography */
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1d1d1b;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1d1d1b;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 7vw;
+}
+
+@media screen and (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1,
+  h2 {
+    font-size: 4.5rem;
+  }
+}
+
+h3 {
+  font-size: 2.5vw;
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Layout */
+.wrap {
+  max-width: 1000px;
+}
+
+.page-one-column .panel-content .wrap {
+  max-width: 1000px;
+}
+
+/* Navigation */
+.navigation-top {
+  display: none !important;
+}
+
 /* Content */
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.site-header {
+  background-color: #ffcc00;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header .wrap {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-branding a {
+  transition: none;
+}
+
+.site-branding a:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .site-branding img {
+    max-height: none;
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-branding .custom-logo-link {
+    flex: 1 0 33%;
+    max-width: 33%;
+  }
+}
+
+.site-branding-text,
+body:not(.title-tagline-hidden) .site-branding-text {
+  color: #1d1d1b;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .site-branding-text,
+  body:not(.title-tagline-hidden) .site-branding-text {
+    flex: 1 0 66%;
+    max-width: 66%;
+  }
+}
+
+.site-description {
+  color: #1d1d1b;
+  font-size: 1.25rem;
+  margin: 0;
+  order: 1;
+}
+
+.site-title {
+  font-size: 7vw;
+  line-height: 1;
+  order: 2;
+  padding-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .site-title {
+    font-size: 4.5rem;
+  }
+}
+
 .has-header-image .custom-header-media img {
   position: relative;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.entry-header {
+  display: none !important;
+}
+
+.entry-content h3 + h2 {
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.entry-content h3 + h2::after {
+  background-color: #1d1d1b;
+  content: ' ';
+  display: block;
+  height: 0.5rem;
+  margin-top: 2rem;
+  width: 4rem;
+}
+
+.entry-content figure,
+.entry-content p {
+  margin: 2rem 0 0;
+}
+
+.entry-content li,
+.entry-content p,
+.entry-content td {
+  font-size: 1.125rem;
+  line-height: 1.6;
 }
 
 /* Media */
 /*--------------------------------------------------------------
 ## Media
 --------------------------------------------------------------*/
-.banner--full-width {
+.custom-banner.wp-block-media-text {
+  align-items: end;
+  background-color: #ffcc00;
+  grid-template-areas: '. media-text-content .' '. media-text-media .';
+  grid-template-columns: minmax(1em, 1fr) minmax(1em, 1000px) minmax(1em, 1fr);
   height: auto;
   left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin: 2rem -50vw;
   max-width: none;
   position: relative;
   right: 50%;
   width: 100vw;
 }
 
-.banner--full-width > img {
-  max-width: none;
-  width: 100%;
+@media screen and (min-width: 1024px) {
+  .custom-banner.wp-block-media-text {
+    grid-template-areas: 'media-text-media media-text-media media-text-content .';
+    grid-template-columns: minmax(1em, 1fr) repeat(2, 500px) minmax(1em, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .custom-banner.wp-block-media-text.has-media-on-the-right {
+    grid-template-areas: '. media-text-content media-text-media media-text-media';
+  }
+}
+
+.custom-banner.wp-block-media-text .wp-block-media-text__content {
+  padding: 2rem 8%;
 }

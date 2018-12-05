@@ -1,5 +1,18 @@
 // Colors
-$brand-primary: rgb(0, 115, 170);
+$brand-primary: rgb(255, 204, 0);
+$color__text-main: rgb(29, 29, 27);
 
 // Fonts
-// ...
+$font__body: 'Montserrat Alternates', sans-serif;
+$font__heading: $font__body;
+
+// Breakpoints
+$sm: 600px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1379px;
+
+// Containers
+$container-sm: 680px;
+$container-md: 740px;
+$container-lg: 1000px;

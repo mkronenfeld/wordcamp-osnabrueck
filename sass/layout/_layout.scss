@@ -1,0 +1,11 @@
+.wrap {
+  max-width: $container-lg;
+}
+
+.page-one-column {
+  .panel-content {
+    .wrap {
+      max-width: $container-lg;
+    }
+  }
+}

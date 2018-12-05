@@ -1,3 +1,71 @@
+.site-header {
+  background-color: $brand-primary;
+
+  .wrap {
+    @media screen and (min-width: $md) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.site-branding {
+  a {
+    transition: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  img {
+    @media screen and (min-width: $md) {
+      max-height: none;
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  .custom-logo-link {
+    @media screen and (min-width: $md) {
+      flex: 1 0 33%;
+      max-width: 33%;
+    }
+  }
+}
+
+.site-branding-text,
+body:not(.title-tagline-hidden) .site-branding-text {
+  color: $color__text-main;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
+  @media screen and (min-width: $md) {
+    flex: 1 0 66%;
+    max-width: 66%;
+  }
+}
+
+.site-description {
+  color: $color__text-main;
+  font-size: 1.25rem;
+  margin: 0;
+  order: 1;
+}
+
+.site-title {
+  font-size: 7vw;
+  line-height: 1;
+  order: 2;
+  padding-bottom: 1.25rem;
+
+  @media screen and (min-width: $lg) {
+    font-size: 4.5rem;
+  }
+}
+
 .has-header-image {
   .custom-header-media {
     img {
