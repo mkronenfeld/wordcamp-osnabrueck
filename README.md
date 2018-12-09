@@ -29,6 +29,7 @@ Copy and paste the URL `https://api.github.com/repos/mkronenfeld/wordcamp-osnabr
 ## Authors
 
 * **Marvin Kronenfeld** - *Initial work* - [mkronenfeld](https://github.com/mkronenfeld)
+* **Detlef Heese** - *Typo and style balancing*
 
 See also the list of [contributors](https://github.com/mkronenfeld/wordcamp-osnabrueck/contributors) who participated in this project.
 

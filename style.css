@@ -53,23 +53,44 @@ h2 {
   h1,
   h2 {
     font-size: 4.5rem;
+    font-size: 3.2rem;
   }
 }
 
-h3 {
+h2 {
+  font-weight: bold;
+}
+
+h3,
+.subheadline {
   font-size: 2.5vw;
 }
 
 @media screen and (min-width: 768px) {
-  h3 {
+  h3,
+  .subheadline {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  h3 {
+  h3,
+  .subheadline {
     font-size: 2.25rem;
+    font-size: 1.35rem;
   }
+}
+
+h4 {
+  font-weight: bold;
+}
+
+li,
+p,
+td {
+  font-size: 1.125rem;
+  font-size: 0.92rem;
+  line-height: 1.4;
 }
 
 /* Layout */
@@ -82,10 +103,6 @@ h3 {
 }
 
 /* Navigation */
-.navigation-top {
-  display: none !important;
-}
-
 /* Content */
 /*--------------------------------------------------------------
 ## Header
@@ -172,32 +189,31 @@ body:not(.title-tagline-hidden) .site-branding-text {
   display: none !important;
 }
 
-.entry-content h3 + h2 {
+.entry-content figure,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content p {
+  margin: 2rem 0 0;
+}
+
+.entry-content .subheadline + h2 {
   font-weight: bold;
   line-height: 1;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
 
-.entry-content h3 + h2::after {
+.entry-content .subheadline + h2::after {
   background-color: #1d1d1b;
   content: ' ';
   display: block;
   height: 0.5rem;
   margin-top: 2rem;
   width: 4rem;
-}
-
-.entry-content figure,
-.entry-content p {
-  margin: 2rem 0 0;
-}
-
-.entry-content li,
-.entry-content p,
-.entry-content td {
-  font-size: 1.125rem;
-  line-height: 1.6;
 }
 
 /* Media */
