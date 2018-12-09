@@ -1,0 +1,12 @@
+.wp-block-columns {
+  // Fixed some global Gutenberg issues here.
+  @media screen and (min-width: 600px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.wp-block-media-text {
+  &__content {
+    align-self: start;
+  }
+}

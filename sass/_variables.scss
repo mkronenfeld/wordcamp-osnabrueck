@@ -1,6 +1,9 @@
 // Colors
 $brand-primary: rgb(255, 204, 0);
-$color__text-main: rgb(29, 29, 27);
+$black: rgb(29, 29, 27);
+$white: rgb(255, 255, 255);
+
+$color__text-main: $black;
 
 // Fonts
 $font__body: 'Montserrat Alternates', sans-serif;
