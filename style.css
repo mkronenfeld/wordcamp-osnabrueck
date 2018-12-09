@@ -8,6 +8,7 @@
 ## Header
 ## Posts and Pages
 # Media
+# Widgets
 # Blocks
 --------------------------------------------------------------*/
 /* Typography */
@@ -290,6 +291,47 @@ body:not(.title-tagline-hidden) .site-branding-text {
 
 .custom-banner.wp-block-media-text .wp-block-media-text__content {
   padding: 2rem 8%;
+}
+
+/* Widgets */
+.custom-html-widget > .social-navigation {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: -12.5rem;
+  width: auto;
+  z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-html-widget > .social-navigation {
+    display: block;
+  }
+}
+
+.admin-bar .custom-html-widget > .social-navigation {
+  top: -14.5rem;
+}
+
+.custom-html-widget > .social-navigation .social-navigation__item {
+  display: block;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.custom-html-widget > .social-navigation .social-navigation__link {
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+}
+
+.custom-html-widget > .social-navigation .social-navigation__link:focus, .custom-html-widget > .social-navigation .social-navigation__link:hover {
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+.custom-html-widget > .social-navigation img {
+  box-shadow: none;
 }
 
 /* Blocks */

@@ -8,6 +8,7 @@
 ## Header
 ## Posts and Pages
 # Media
+# Widgets
 # Blocks
 --------------------------------------------------------------*/
 
@@ -32,8 +33,12 @@
 
 /* Media */
 
-@import "sass/media/media";
+@import 'sass/media/media';
+
+/* Widgets */
+
+@import 'sass/widgets/widgets';
 
 /* Blocks */
 
-@import "sass/blocks/blocks";
+@import 'sass/blocks/blocks';
