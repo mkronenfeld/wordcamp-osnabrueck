@@ -140,12 +140,12 @@ td {
   color: white;
 }
 
-.main-navigation ul ul a {
-  color: #1d1d1b;
-}
-
 .main-navigation li {
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-navigation .sub-menu a {
+  color: #1d1d1b;
 }
 
 .menu-toggle {
@@ -316,7 +316,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
   z-index: 10;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .custom-html-widget > .social-navigation {
     display: block;
   }

@@ -26,12 +26,12 @@
     color: $white;
   }
 
-  ul ul a {
-    color: $black;
-  }
-
   li {
     border-color: rgba($white, 0.5);
+  }
+
+  .sub-menu a {
+    color: $black;
   }
 }
 
