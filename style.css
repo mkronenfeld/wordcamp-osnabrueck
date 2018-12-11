@@ -140,6 +140,10 @@ td {
   color: white;
 }
 
+.main-navigation ul ul a {
+  color: #1d1d1b;
+}
+
 .main-navigation li {
   border-color: rgba(255, 255, 255, 0.5);
 }
