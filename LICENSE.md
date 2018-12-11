@@ -19,16 +19,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 This program incorporates work covered by the following copyright and
 permission notices:
 
-  b2 is (c) 2001, 2002 Michel Valdrighi - m@tidakada.com -
-  http://tidakada.com
-
-  Wherever third party code has been used, credit has been given in the code's
-  comments.
-
-  b2 is released under the GPL
-
-and
-
   WordCamp Osnabrück Styles
 
   Copyright 2018 by the contributors
