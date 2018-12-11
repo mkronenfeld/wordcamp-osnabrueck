@@ -251,6 +251,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 .entry-content h5,
 .entry-content h6,
 .entry-content p,
+.entry-content .googlemaps,
 .entry-content .wp-block-cover {
   margin: 2rem 0 0;
 }
