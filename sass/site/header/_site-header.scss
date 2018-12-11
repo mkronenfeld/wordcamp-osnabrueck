@@ -71,3 +71,13 @@ body:not(.title-tagline-hidden) .site-branding-text {
     }
   }
 }
+
+.panel-image {
+  background-size: contain;
+  height: auto;
+
+  @media screen and (min-width: $lg) {
+    background-size: cover;
+    height: 100vh;
+  }
+}

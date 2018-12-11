@@ -236,6 +236,18 @@ body:not(.title-tagline-hidden) .site-branding-text {
   position: relative;
 }
 
+.panel-image {
+  background-size: contain;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .panel-image {
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
