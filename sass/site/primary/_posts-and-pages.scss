@@ -3,6 +3,10 @@
 }
 
 .entry-content {
+  > * {
+    max-width: 650px;
+  }
+
   figure,
   h1,
   h2,
@@ -10,7 +14,9 @@
   h4,
   h5,
   h6,
+  li,
   p,
+  td,
   .googlemaps,
   .wp-block-cover {
     margin: 2rem 0 0;

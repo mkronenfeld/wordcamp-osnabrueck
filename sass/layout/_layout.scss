@@ -2,10 +2,15 @@
   max-width: $container-lg;
 }
 
+.content-area {
+  max-width: none !important;
+}
+
 .page-one-column {
   .panel-content {
     .wrap {
       max-width: $container-lg;
+      padding-top: 0;
     }
   }
 }
