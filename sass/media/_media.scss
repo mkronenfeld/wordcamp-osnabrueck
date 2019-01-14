@@ -29,6 +29,14 @@
 		}
 	}
 
+	&.is-stacked-on-mobile {
+		@media screen and (max-width: 600px) {
+	    grid-template-areas:
+				'media-text-content'
+				'media-text-media';
+		}
+	}
+
 	.wp-block-media-text__content {
 		padding: 2rem 8%;
 	}
