@@ -65,20 +65,17 @@
 
 .wcorg-organizer-description {
 	h4 {
-		display: inline-block;
+		display: block;
 		margin-top: 11px;
 	}
 
 	img {
-		float: right;
-		margin-left: 1.5em;
-		margin-bottom: 16em;
-		margin-top: -55px;
-
+		float: none;
 		filter: grayscale(100%);
 		-webkit-filter: grayscale(100%);
 		-moz-filter: grayscale(100%);
 		-ms-filter: grayscale(100%);
+    margin: 1rem 0 0.5rem;
 	}
 
 	.emoji {
