@@ -331,19 +331,17 @@ body:not(.title-tagline-hidden) .site-branding-text {
 }
 
 .wcorg-organizer-description h4 {
-  display: inline-block;
+  display: block;
   margin-top: 11px;
 }
 
 .wcorg-organizer-description img {
-  float: right;
-  margin-left: 1.5em;
-  margin-bottom: 16em;
-  margin-top: -55px;
+  float: none;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
+  margin: 1rem 0 0.5rem;
 }
 
 .wcorg-organizer-description .emoji {
@@ -370,7 +368,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
   align-items: end;
   background-color: #ffcc00;
   grid-template-areas: '. media-text-content .' '. media-text-media .';
-  grid-template-columns: minmax(1em, 1fr) minmax(1em, 1000px) minmax(1em, 1fr) !important;
+  grid-template-columns: minmax(1em, 1fr) minmax(1em, 1000px) minmax(1em, 1fr);
   height: auto;
   left: 50%;
   margin: 2rem -50vw;
@@ -383,7 +381,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 @media screen and (min-width: 1024px) {
   .custom-banner.wp-block-media-text {
     grid-template-areas: 'media-text-media media-text-media media-text-content .';
-    grid-template-columns: minmax(1em, 1fr) repeat(2, 500px) minmax(1em, 1fr) !important;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, 500px) minmax(1em, 1fr);
   }
 }
 
