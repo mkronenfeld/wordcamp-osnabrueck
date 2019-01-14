@@ -7,7 +7,7 @@
 	grid-template-areas:
 		'. media-text-content .'
 		'. media-text-media .';
-	grid-template-columns: minmax(1em, 1fr) minmax(1em, $container-lg) minmax(1em, 1fr) !important;
+	grid-template-columns: minmax(1em, 1fr) minmax(1em, $container-lg) minmax(1em, 1fr);
 	height: auto;
 	left: 50%;
 	margin: 2rem -50vw;
@@ -19,7 +19,7 @@
 	@media screen and (min-width: $lg) {
 		grid-template-areas:
 			'media-text-media media-text-media media-text-content .';
-		grid-template-columns: minmax(1em, 1fr) repeat(2, ($container-lg / 2)) minmax(1em, 1fr) !important;
+		grid-template-columns: minmax(1em, 1fr) repeat(2, ($container-lg / 2)) minmax(1em, 1fr);
 	}
 
 	&.has-media-on-the-right {
